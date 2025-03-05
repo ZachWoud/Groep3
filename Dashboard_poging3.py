@@ -112,15 +112,15 @@ df_liveweer["lon"] = df_liveweer["plaats"].map(lambda city: city_coords.get(city
 # Create a folium map centered over the Netherlands
 nl_map = folium.Map(location=[52.3, 5.3], zoom_start=8)
 
-for index, row in df_liveweer.iterrows():
-    weather_desc = row['samenv'].lower()
-    icon_file = weather_icons.get(weather_desc, "bewolkt.png")  # Default to "bewolkt.png" if no match
-    icon_path = f"iconen-weerlive/{icon_file}"  # Folder path updated
+#for index, row in df_liveweer.iterrows():
+   # weather_desc = row['samenv'].lower()
+   # icon_file = weather_icons.get(weather_desc, "bewolkt.png")  # Default to "bewolkt.png" if no match
+   # icon_path = f"iconen-weerlive/{icon_file}"  # Folder path updated
     
     popup_text = f"{row['plaats']}: {row['temp']}°C, {row['samenv']}"
     
     # Add marker with the custom weather icon
-    folium.Marker(
+    # folium.Marker(
         location=[row["lat"], row["lon"]],
         popup=popup_text,
         tooltip=row["plaats"],
