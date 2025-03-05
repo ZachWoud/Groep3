@@ -117,7 +117,7 @@ nl_map = folium.Map(location=[52.3, 5.3], zoom_start=8)
    # icon_file = weather_icons.get(weather_desc, "bewolkt.png")  # Default to "bewolkt.png" if no match
    # icon_path = f"iconen-weerlive/{icon_file}"  # Folder path updated
     
-    popup_text = f"{row['plaats']}: {row['temp']}°C, {row['samenv']}"
+    # popup_text = f"{row['plaats']}: {row['temp']}°C, {row['samenv']}"
     
     # Add marker with the custom weather icon
     # folium.Marker(
