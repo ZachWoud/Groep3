@@ -121,11 +121,11 @@ nl_map = folium.Map(location=[52.3, 5.3], zoom_start=8)
     
     # Add marker with the custom weather icon
     # folium.Marker(
-        location=[row["lat"], row["lon"]],
-        popup=popup_text,
-        tooltip=row["plaats"],
-        icon=folium.features.CustomIcon(icon_path, icon_size=(30, 30))
-    ).add_to(nl_map)
+       # location=[row["lat"], row["lon"]],
+       # popup=popup_text,
+       # tooltip=row["plaats"],
+       # icon=folium.features.CustomIcon(icon_path, icon_size=(30, 30))
+    #).add_to(nl_map)
 
 
 # Display the map
