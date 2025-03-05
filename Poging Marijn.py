@@ -2,8 +2,7 @@ import requests
 import pandas as pd
 import streamlit as st
 import folium
-from streamlit_folium import st_folium
-from folium.features import CustomIcon
+import streamlit_folium as st_folium
 
 # ---- 📌 API Configuration ----
 API_KEY = 'd5184c3b4e'
